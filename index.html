@@ -8,7 +8,7 @@
   <script src="main.js"></script>
   
 </head>
-<body>
+<body onkeyup="update()">
   <button id="flipButton" onclick="flip()">Flip Card</button>
 
 <main>
@@ -30,10 +30,10 @@
 
   <form action="">
     <label for="">CARDHOLDER NAME</label><br>
-    <input type="text" name="" id="" placeholder="e.g. Yasser Dalali" maxlength="8">
+    <input type="text" name="" id="name" placeholder="e.g. Yasser Dalali" maxlength="20" onclick="flip('front')">
 <br>
     <label for="">CARD NUMBER</label><br>
-    <input type="text" name="" id="" placeholder="1234 5678 9123 0000" maxlength="8">
+    <input type="text" name="" id="number" placeholder="e.g. 1234567891230000" maxlength="16" onclick="flip('front')">
 <br>
 
     <div style="display: flex;">
@@ -43,9 +43,9 @@
     <div style="display: flex;">
 
     <br>
-    <input type="number" class="lower date" name="" id="" placeholder="MM" maxlength="2" min="1" max="12">
+    <input type="text" class="lower date" name="" id="MM" placeholder="MM" maxlength="2" min="1" max="12" onclick="flip('front')">
 
-    <input type="number" class="lower date" name="" id="" placeholder="YY" maxlength="2" minlength="2" min="25">
+    <input type="text" class="lower date" name="" id="YY" placeholder="YY" maxlength="2" minlength="2" min="25" onclick="flip('front')">
   </div>
   </div>
 
@@ -53,7 +53,7 @@
     <label for="">CVC</label>
 
     <br>
-    <input type="number" class="lower" name="" id="" placeholder="e.g. 123" maxlength="3" minlength="3">
+    <input type="text" class="lower" name="" id="cvc" placeholder="e.g. 123" maxlength="3" minlength="3" onclick="flip('back')">
 
   </div>
 </div>

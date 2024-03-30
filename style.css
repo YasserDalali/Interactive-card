@@ -21,7 +21,7 @@ body {font-family: Space Grotesk; font-weight: 550;margin: 0; background-color: 
 
 
 }
-/*! ---------------------------------------------------------- */
+/*! ANIMATION  ---------------------------------------------------------- */
 
 .hidden {display: none;}
 
@@ -38,7 +38,7 @@ body {font-family: Space Grotesk; font-weight: 550;margin: 0; background-color: 
 /*! ---------------------------------------------------------- */
 
 
-/*? ---------------------------------------------------------- */
+/*? FORM ---------------------------------------------------------- */
 
 main {
 
@@ -53,7 +53,7 @@ main {
     background-repeat: none;
     background-size: cover;
     height: 100vh;
-    width: 25%;
+    width: 40%;
     position: relative;}
 
 main > .card {position: absolute; bottom: 32%; left: 5%; scale: 1.2;}
@@ -83,6 +83,5 @@ main > .form {
     width: 30%;
 }
 
-
-
 /*? ---------------------------------------------------------- */
+
