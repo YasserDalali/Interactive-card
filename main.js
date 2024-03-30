@@ -1,5 +1,3 @@
-
-
 function flip() {
 document.querySelector('.card').classList.toggle('flipped');
   document.querySelector('.card').classList.toggle('card-back');
@@ -9,3 +7,5 @@ document.querySelector('.card').classList.toggle('flipped');
   document.querySelector('.number').classList.toggle('hidden')
   document.querySelector('.cvc').classList.toggle('hidden')
   };
+
+
