@@ -20,6 +20,9 @@ else if (arg == "front" && !document.querySelector('.cvc').classList.contains('h
 
 
 /*! ------------------------------------------------------------------------ */
+function formatNumber(num) {
+    return num < 10 ? '0' + num : String(num);
+  }
 
 function update() {
 
@@ -30,8 +33,8 @@ function update() {
     let name = document.querySelector('#name').value
 
     let cardDate = document.querySelector('.date')
-    let MM = document.querySelector('#MM').value
-    let YY = document.querySelector('#YY').value
+    let MM = formatNumber((document.querySelector('#MM').value))
+    let YY = formatNumber(document.querySelector('#YY').value)
 
     let cardCvc = document.querySelector('.cvc')
     let cvc = document.querySelector('#cvc').value
@@ -40,10 +43,27 @@ function update() {
             cardNum.innerHTML = num
 
     }
+    else {cardNum.innerHTML = '0000 0000 0000 0000'}
 
+    if (name != '') {
     cardName.innerHTML = name
+}
+else {cardName.innerHTML = 'CARDHOLDER NAME'}
 
+
+if (MM != '' && YY == '') {
+    cardDate.innerHTML = MM+'/'+'00'
+}
+else if (MM == '' && YY != '') {
+    cardDate.innerHTML = '00'+'/'+YY
+}
+
+else if (MM != '' && YY != '') {
     cardDate.innerHTML = MM+'/'+YY
+
+}
+else {cardDate.innerHTML = '00/00'}
+
 
     cardCvc.innerHTML = cvc
 
