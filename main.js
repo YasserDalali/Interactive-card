@@ -64,7 +64,12 @@ else if (MM != '' && YY != '') {
 }
 else {cardDate.innerHTML = '00/00'}
 
-
-    cardCvc.innerHTML = cvc
+if (cvc != '') {
+    cardCvc.innerHTML = cvc}
+else {cardCvc.innerHTML = "000"}
 
 }
+/*! ------------------------------------------------------------------------ */
+/*                              REGEX                    */                                      
+/*! ------------------------------------------------------------------------ */
+
