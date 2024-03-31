@@ -9,7 +9,6 @@
   
 </head>
 <body onkeyup="update()">
-  <button id="flipButton" onclick="flip()">Flip Card</button>
 
 <main>
 
@@ -36,11 +35,11 @@
     <input type="text" name="" id="number" placeholder="e.g. 1234567891230000" maxlength="16" onclick="flip('front')">
 <br>
 
-    <div style="display: flex;">
+    <div class="div-flex">
       <div>
     <label for="">EXP. DATE (MM/YY)</label>
 
-    <div style="display: flex;">
+    <div class="div-flex">
 
     <br>
     <input type="text" class="lower date" name="" id="MM" placeholder="MM" maxlength="2" min="1" max="12" onclick="flip('front')">
@@ -50,7 +49,8 @@
   </div>
 
   <div>
-    <label for="">CVC</label>
+    
+    <label for="" id="cvclabel">CVC</label>
 
     <br>
     <input type="text" class="lower" name="" id="cvc" placeholder="e.g. 123" maxlength="3" minlength="3" onclick="flip('back')">
